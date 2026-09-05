@@ -3,37 +3,166 @@ html {
 }
 
 body {
+    margin: 0;
     display: grid;
-    grid-template-areas: "sidebar header header header"
-        "sidebar card card card"
-        "sidebar vendas vendas vendas"
-        "sidebar aviso aviso aviso";
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
+    grid-template-areas: "sidebar main main main main"
+        "sidebar main main main main"
+        "sidebar main main main main"
+        "sidebar main main main main";
+}
+
+
+
+.main {
+    display: grid;
+    grid-area: main;
 }
 
 /*HEADER DASHBOARDDD*/
+.dashboard {
+    display: grid;
+    grid-template-areas: "header header header header"
+        "card card card card"
+        "vendas vendas vendas vendas"
+        "aviso aviso aviso aviso";
+
+}
+
 .dash {
     background-color: #FFFFFF;
     display: grid;
     grid-area: header;
+    border-bottom: 1px solid lightgray;
+
 }
 
 .dash h2 {
     font-size: 24px;
+    position: relative;
+    top: 15px;
 }
 
 .dash p {
     font-size: 15px;
     position: relative;
-    bottom: 30px;
+    bottom: 20px;
+    color: gray;
 }
 
 /* FIM DO HEADER DASHBOARD */
+
+/* SIDEBAR */
+.sidebar {
+    display: grid;
+    grid-area: sidebar;
+    width: 280px;
+    box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+}
+
+.user {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    height: 150px;
+    position: relative;
+    bottom: 13px;
+    width: 100%;
+}
+
+.user h1 {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+#v {
+    position: relative;
+    top: 70px;
+    right: 110px;
+    color: gray;
+}
+
+.logo {
+    background-color: #4F46E5;
+    height: 60px;
+    width: 60px;
+    justify-items: center;
+    align-content: center;
+    color: white;
+    position: relative;
+    top: 50px;
+    left: 30px;
+    border-radius: 15px;
+    padding: 0px 3px;
+}
+
+.logo p {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    bottom: 16px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 240px;
+    left: 40px;
+    gap: 30px;
+    text-decoration: none;
+}
+
+.nav-link a {
+
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+}
+
+.alerta {
+
+    background-color: #FFFBEB;
+    border: 2px solid #FDE68A;
+    border-radius: 15px;
+    width: 240px;
+    position: relative;
+    left: 18px;
+    top: 240px;
+}
+
+.alerta h2 {
+    color: #92400E;
+    font-size: 13px;
+    font-weight: 900;
+    position: relative;
+    left: 20px;
+    height: 5px;
+}
+
+#alerta-side {
+    color: #D97706;
+    font-weight: 900;
+    font-size: 24px;
+    position: relative;
+    left: 20px;
+    margin: 0px;
+    height: 25px;
+}
+
+.alerta p {
+    color: #B45309;
+    font-size: 12px;
+    position: relative;
+    left: 20px;
+}
+
+/* SEDEBAR END */
 
 .cards {
     display: grid;
     grid-area: card;
     grid-template-columns: repeat(4, 1fr);
-
 }
