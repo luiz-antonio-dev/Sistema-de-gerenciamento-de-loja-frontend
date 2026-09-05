@@ -1,0 +1,39 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "sidebar header header header"
+        "sidebar card card card"
+        "sidebar vendas vendas vendas"
+        "sidebar aviso aviso aviso";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+
+/*HEADER DASHBOARDDD*/
+.dash {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-area: header;
+}
+
+.dash h2 {
+    font-size: 24px;
+}
+
+.dash p {
+    font-size: 15px;
+    position: relative;
+    bottom: 30px;
+}
+
+/* FIM DO HEADER DASHBOARD */
+
+.cards {
+    display: grid;
+    grid-area: card;
+    grid-template-columns: repeat(4, 1fr);
+
+}
