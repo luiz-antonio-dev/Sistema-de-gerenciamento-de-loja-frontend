@@ -268,7 +268,7 @@ body {
 .vendas-recentes div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(224, 224, 224);
 }
 
 .vendas-recentes div h3 {
@@ -313,10 +313,14 @@ body {
     padding-left: 20px;
 }
 
+tr:not(:last-child) {
+    border-bottom: 2px solid whitesmoke;
+}
+
 .cliente,
 .produto {
     text-align: left;
-    border-bottom: 1px solid black;
+
 }
 
 .data {
