@@ -45,107 +45,109 @@
                 <div class="cards">
                     <div class="receita-total">
                         <h3>Receita Total</h3>
-                        <p>R$ 1.049,00</p>
-                        <p>todos os períodos</p>
+                        <p class="card-number" id="total">R$ 1.049,00</p>
+                        <p class="card-descricao">todos os períodos</p>
                     </div>
                     <div class="vendas-hoje">
                         <h3>Vendas de Hoje</h3>
-                        <p>R$ 159,60</p>
-                        <p>1 transação</p>
+                        <p class="card-number" id="hoje">R$ 159,60</p>
+                        <p class="card-descricao">1 transação</p>
                     </div>
                     <div class="produtos-estoque">
                         <h3>Produtos Cadastrados</h3>
-                        <p>6</p>
-                        <p>em estoque</p>
+                        <p class="card-number" id="cadastrados">6</p>
+                        <p class="card-descricao">em estoque</p>
                     </div>
                     <div class="produtos-reposicao">
                         <h3>Estoque Baixo</h3>
-                        <p>3</p>
-                        <p>precisam reposição</p>
+                        <p class="card-number" id="baixo">3</p>
+                        <p class="card-descricao">precisam reposição</p>
                     </div>
                 </div>
 
                 <div class="vendas-recentes">
                     <div>
                         <h3>Vendas Recentes</h3>
-                        <a>Ver todas →</a>
+                        <a href="">Ver todas →</a>
                     </div>
 
                     <table class="vendas">
                         <thead>
                             <tr>
-                                <th>CLIENTE</th>
-                                <th>PRODUTO</th>
-                                <th>QTD</th>
-                                <th>TOTAL</th>
-                                <th>DATA</th>
+                                <th class="cliente" id="cliente">CLIENTE</th>
+                                <th class="produto">PRODUTO</th>
+                                <th class="qtd">QTD</th>
+                                <th class="valor">TOTAL</th>
+                                <th class="data">DATA</th>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr>
-                                <td>Fernanda Reis</td>
+                                <td class="cliente">Fernanda Reis</td>
                                 <td>Boné Aba Curva</td>
-                                <td>4</td>
-                                <td>R$ 159,60</td>
-                                <td>2026-08-30</td>
+                                <td class="qtd">4</td>
+                                <td class="valor">R$ 159,60</td>
+                                <td class="data">2026-08-30</td>
                             </tr>
 
                             <tr>
-                                <td>João Pereira</td>
+                                <td class="cliente">João Pereira</td>
                                 <td>Mochila Urbana</td>
-                                <td>1</td>
-                                <td>R$ 189,90</td>
-                                <td>2026-08-29</td>
+                                <td class="qtd">1</td>
+                                <td class="valor">R$ 189,90</td>
+                                <td class="data">2026-08-29</td>
                             </tr>
 
                             <tr>
-                                <td>Mariana Costa</td>
+                                <td class="cliente">Mariana Costa</td>
                                 <td>Calça Jeans</td>
-                                <td>2</td>
-                                <td>R$ 299,80</td>
-                                <td>2026-08-29</td>
+                                <td class="qtd">2</td>
+                                <td class="valor">R$ 299,80</td>
+                                <td class="data">2026-08-29</td>
                             </tr>
 
                             <tr>
-                                <td>Carlos Lima</td>
+                                <td class="cliente">Carlos Lima</td>
                                 <td>Tênis Esportivo</td>
-                                <td>1</td>
-                                <td>R$ 249,90</td>
-                                <td>2026-08-28</td>
+                                <td class="qtd">1</td>
+                                <td class="valor">R$ 249,90</td>
+                                <td class="data">2026-08-28</td>
                             </tr>
 
                             <tr>
-                                <td>Ana Souza</td>
+                                <td class="cliente">Ana Souza</td>
                                 <td>Camiseta Básica</td>
-                                <td>3</td>
-                                <td>R$ 149,70</td>
-                                <td>2026-08-28</td>
+                                <td class="qtd">3</td>
+                                <td class="valor">R$ 149,70</td>
+                                <td class="data">2026-08-28</td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
 
-                    <div class="estoque-baixo">
-                        <div>
-                            <h3>⚠ Produtos com Estoque Baixo</h3>
-                        </div>
 
-                        <div>
-                            <h4>Tênis Esportivo</h4>
-                            <p>TEN-003 · Calçados</p>
-                        </div>
+                <div class="estoque-baixo">
+                    <div>
+                        <h3>⚠ Produtos com Estoque Baixo</h3>
+                    </div>
 
-                        <div>
-                            <h4>Mochila Urbana</h4>
-                            <p>MOC-005 · Acessórios</p>
-                        </div>
+                    <div>
+                        <h4>Tênis Esportivo</h4>
+                        <p>TEN-003 · Calçados</p>
+                    </div>
 
-                        <div>
-                            <h4>Calça Jeans</h4>
-                            <p>CAL-002 · Vestuário</p>
-                        </div>
+                    <div>
+                        <h4>Mochila Urbana</h4>
+                        <p>MOC-005 · Acessórios</p>
+                    </div>
+
+                    <div>
+                        <h4>Calça Jeans</h4>
+                        <p>CAL-002 · Vestuário</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

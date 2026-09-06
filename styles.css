@@ -10,10 +10,15 @@ body {
         "sidebar main main main main"
         "sidebar main main main main";
     grid-template-columns: 280px auto;
-
+    height: 100vh;
 }
 
 
+.content {
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 70vw;
+}
 
 .main {
     display: grid;
@@ -28,6 +33,7 @@ body {
         "card card card card"
         "vendas vendas vendas vendas"
         "aviso aviso aviso aviso";
+
 
 }
 
@@ -61,7 +67,14 @@ body {
     grid-area: sidebar;
     width: 280px;
     box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.1);
-    height: 100vh;
+    height: 100%;
+}
+
+.sidebar-baixo {
+    display: grid;
+    justify-content: space-around;
+    align-items: start;
+    height: 800px;
 }
 
 .user {
@@ -109,33 +122,41 @@ body {
     font-weight: bold;
     position: relative;
     bottom: 16px;
+
 }
 
 .nav-link {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    bottom: 240px;
-    left: 40px;
-    gap: 30px;
+    align-self: start;
+    display: grid;
+    gap: 10px;
     text-decoration: none;
+    padding-top: 15px;
 }
 
 .nav-link a {
-
+    border-radius: 15px;
     text-decoration: none;
     color: rgb(52, 52, 52);
+    height: 50px;
+    padding-left: 30px;
+    align-content: center;
+    width: 150px;
+}
+
+.nav-link a:hover {
+    color: #090e19;
+    background-color: whitesmoke;
+    transition: 0.3s;
+    font-size: 17px;
 }
 
 .alerta {
-
+    margin: 10px;
+    align-self: end;
     background-color: #FFFBEB;
     border: 2px solid #FDE68A;
     border-radius: 15px;
     width: 240px;
-    position: relative;
-    left: 18px;
-    top: 240px;
 }
 
 .alerta h2 {
@@ -166,12 +187,144 @@ body {
 
 /* SEDEBAR END */
 
+/*CARDS START */
+
 .cards {
     display: grid;
     grid-area: card;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1 / 4;
+    gap: 25px;
+    width: 100%;
+    margin-top: 40px;
 }
 
-.content {
-    padding-left: 50px;
+.receita-total,
+.vendas-hoje,
+.produtos-estoque,
+.produtos-reposicao {
+    display: grid;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+
+}
+
+.receita-total h3,
+.vendas-hoje h3,
+.produtos-estoque h3,
+.produtos-reposicao h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: gray;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+.card-number {
+    font-weight: 900;
+    font-size: 26px;
+    margin: 0px;
+}
+
+.card-descricao {
+    color: lightgray;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+}
+
+#total {
+    color: #4F46E5;
+}
+
+#hoje {
+    color: #059669;
+}
+
+#cadastrados {
+    color: #111827;
+}
+
+#baixo {
+    color: #D97706;
+}
+
+/* CARDS END */
+
+/* TABELA INICIOO */
+
+.vendas-recentes {
+    display: grid;
+    grid-area: vendas;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
+    margin: 50px 0px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.vendas-recentes div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid lightgray;
+}
+
+.vendas-recentes div h3 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #111827;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.vendas-recentes div a {
+    display: grid;
+    align-items: center;
+    margin-left: 500px;
+    margin-right: 0px;
+    color: #4F46E5;
+    text-decoration: none;
+    font-size: 15px;
+    width: 100px;
+}
+
+.vendas-recentes div a:hover {
+    text-decoration: underline;
+}
+
+.vendas {
+    border-collapse: collapse;
+    height: 30vh;
+
+}
+
+.vendas thead {
+    background-color: whitesmoke;
+    margin: 0px;
+    font-size: 14px;
+    color: #6B7280;
+
+}
+
+
+.cliente {
+    padding-left: 20px;
+}
+
+.cliente,
+.produto {
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.data {
+    padding-right: 20px;
+}
+
+.qtd,
+.valor,
+.data {
+    text-align: right;
 }
