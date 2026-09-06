@@ -9,6 +9,8 @@ body {
         "sidebar main main main main"
         "sidebar main main main main"
         "sidebar main main main main";
+    grid-template-columns: 280px auto;
+
 }
 
 
@@ -16,6 +18,7 @@ body {
 .main {
     display: grid;
     grid-area: main;
+
 }
 
 /*HEADER DASHBOARDDD*/
@@ -34,7 +37,7 @@ body {
     grid-area: header;
     border-bottom: 1px solid lightgray;
     height: 100px;
-    width: 100%;
+    padding-left: 50px;
 }
 
 .dash h2 {
@@ -62,6 +65,7 @@ body {
 }
 
 .user {
+    box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     border-bottom: 1px solid lightgray;
     height: 150px;
@@ -166,4 +170,8 @@ body {
     display: grid;
     grid-area: card;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.content {
+    padding-left: 50px;
 }
