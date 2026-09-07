@@ -11,6 +11,7 @@ body {
         "sidebar main main main main";
     grid-template-columns: 280px auto;
     height: 100vh;
+
 }
 
 
@@ -68,6 +69,7 @@ body {
     width: 280px;
     box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.1);
     height: 100%;
+    width: 100%;
 }
 
 .sidebar-baixo {
@@ -305,9 +307,18 @@ body {
     margin: 0px;
     font-size: 14px;
     color: #6B7280;
-
 }
 
+thead th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 200;
+}
+
+tbody tr:hover {
+    background-color: whitesmoke;
+    transition: 0.1s;
+}
 
 .cliente {
     padding-left: 20px;
@@ -331,4 +342,102 @@ tr:not(:last-child) {
 .valor,
 .data {
     text-align: right;
+}
+
+.pessoa,
+.preco {
+    font-weight: bold;
+}
+
+.dia {
+    color: gray;
+    font-size: 14px;
+}
+
+.item,
+.tanto {
+    color: #374151;
+    font-size: 14px;
+}
+
+/* TABELA FIMM */
+
+/* ALERTA DE ESTOQUE INICIOOOO */
+
+.estoque-baixo {
+    display: grid;
+    grid-area: aviso;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid #FDE68A;
+    border-radius: 20px;
+    width: 100%;
+    height: 29%;
+}
+
+.estoque-baixo div h3 {
+    background-color: #FFFBEB;
+    margin: 0px;
+    color: #92400E;
+    font-size: 15px;
+    padding: 15px 15px 15px 22px;
+    border-bottom: 1px solid #FDE68A;
+}
+
+.produto-faltando:not(:last-child) {
+    border-bottom: 1px solid whitesmoke;
+}
+
+.produto-faltando {
+    display: grid;
+    grid-template-areas: "col1 col2";
+    grid-template-columns: 1fr auto;
+
+    height: 30%;
+    font-size: 14px;
+    padding-left: 20px;
+    align-items: self-start;
+}
+
+.col-1 p {
+    margin: 0px;
+    padding-bottom: 15px;
+    color: #9CA3AF;
+    font-size: 12px;
+}
+
+.produto-faltando h4 {
+    font-size: 13px;
+    margin: 0px;
+    padding-top: 18px;
+    margin-bottom: 4px;
+    align-items: flex-start;
+    color: #1F2937;
+    font-weight: 600;
+}
+
+.col-1 {
+    display: grid;
+    grid-area: col1;
+}
+
+.uni {
+    margin: 0px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-area: col2;
+    justify-self: right;
+    padding-right: 0px;
+    align-self: center;
+    padding-top: 10px;
+    color: #D97706;
+    background-color: #FEF3C7;
+    width: 60px;
+    height: 8px;
+    text-align: center;
+    position: relative;
+    right: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 12px;
 }
