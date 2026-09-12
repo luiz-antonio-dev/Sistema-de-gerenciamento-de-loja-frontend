@@ -210,27 +210,174 @@ body {
 /* BUSCA END */
 
 /* PRODUTOS INICIO */
-.produtos {
+.tabela {
     display: grid;
     grid-area: produtos;
     box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
     margin: 50px 0px;
     width: 100%;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.tabela tbody {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+
+}
+
+.tabela tbody tr {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 45px;
+}
+
+.tabela tbody tr:hover {
+    background-color: whitesmoke;
+}
+
+td {
+    display: grid;
+    align-items: center;
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 2px solid whitesmoke;
+
+}
+
+.tabela thead {
+    display: grid;
+    background-color: whitesmoke;
+    margin: 0px;
+    font-size: 15px;
+    color: #6B7280;
+}
+
+thead tr {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+thead th {
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 200;
+}
+
+.produto {
+    font-weight: bold;
+}
+
+.item {
+    display: grid;
+    justify-content: left;
+    padding-left: 20px;
+}
+
+.sku {
+    display: grid;
+    justify-content: left;
+}
+
+.cod {
+    color: lightgray;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.categoria {
+    display: grid;
+    justify-content: center;
+}
+
+tbody tr .categoria {
+    background-color: #E0E7FF;
+    color: #1D4ED8;
+    font-weight: bold;
+    width: 100px;
+    margin-left: 60px;
+    margin-top: 6px;
+    border-radius: 30px;
+    font-size: 14px;
+    height: 30px;
+}
+
+.preco {
+    display: grid;
+    justify-content: right;
+}
+
+tbody tr .preco {
+    font-weight: bold;
+}
+
+.estoque {
+    display: grid;
+    justify-content: center;
+    justify-self: end;
+}
+
+tbody tr .cheio {
+    background-color: #D1FAE5;
+    color: #047857;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 30px;
+    font-size: 14px;
+    height: 30px;
+    margin-top: 6px;
+
+}
+
+tbody tr .vazio {
+    background-color: #FEF3C7;
+    color: #B45309;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 30px;
+    font-size: 14px;
+    height: 30px;
+    margin-top: 6px;
+
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding-right: 20px;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 90px;
 }
 
 .editar {
     display: grid;
-    align-items: center;
-    margin-left: 500px;
     margin-right: 0px;
     color: #4F46E5;
     text-decoration: none;
     font-size: 15px;
-    width: 100px;
+    justify-content: end;
 }
 
 .editar:hover {
+    text-decoration: underline;
+}
+
+.excluir {
+    display: grid;
+    justify-content: end;
+    margin-right: 0px;
+    color: red;
+    text-decoration: none;
+    font-size: 15px;
+
+
+}
+
+.excluir:hover {
     text-decoration: underline;
 }
 
