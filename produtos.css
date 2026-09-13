@@ -215,7 +215,6 @@ body {
 /* BUSCA INICIO */
 .busca {
     display: grid;
-    grid-area: busca;
     margin: 30px 0px 20px 0px;
 }
 
@@ -237,7 +236,6 @@ body {
 /* PRODUTOS INICIO */
 .tabela {
     display: grid;
-    grid-area: produtos;
     box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
     margin: 50px 0px;
     width: 100%;
@@ -268,7 +266,6 @@ td {
 
 tbody tr:not(:last-child) {
     border-bottom: 2px solid whitesmoke;
-
 }
 
 .tabela thead {
