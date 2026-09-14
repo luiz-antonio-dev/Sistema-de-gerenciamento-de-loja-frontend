@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova Venda</title>
-    <link rel="stylesheet" href="nova-venda.css" </head>
+    <link rel="stylesheet" href="nova-venda.css">
+</head>
 
 <body>
     <div class="sidebar">
@@ -23,7 +24,7 @@
                 <a href="index.html">⏹ Dashboard</a>
                 <a href="produtos.html">📦 Produtos</a>
                 <a href="vendas.html">📄 Vendas</a>
-                <a href="nova-venda.html">+ Nova Venda</a>
+                <a href="nova-venda.html" id="nav-nov">+ Nova Venda</a>
             </nav>
 
             <div class="alerta">
@@ -40,6 +41,35 @@
             <p>05 de setembro de 2026</p>
             <a href="vendas.html">← Voltar</a>
         </div>
+
+        <div class="cadastro">
+            <label>Produto</label>
+            <select>
+                <option>Selecionar um produto</option>
+                <option>Camiseta Básica - R$ 49,90 (estoque: 120)</option>
+                <option>Calça Jeans - R$ 149,90 (estoque: 45)</option>
+                <option>Tênis Esportivo - R$ 249,90 (estoque: 30)</option>
+                <option>Boné Aba Curva - R$ 39,90 (estoque: 80)</option>
+                <option>Mochila Urbana - R$ 189,90 (estoque: 25)</option>
+                <option>Meias Pack 3 - R$ 19,90 (estoque: 200)</option>
+            </select>
+
+            <label>Quantidade</label>
+            <input class="numero" type="number" placeholder="Ex: 2">
+
+            <label>Nome do cliente</label>
+            <input class="text" type="text" placeholder="Ex: João Silva">
+
+            <div class="resumo">
+                <p>Resumo da Venda</p>
+                <p id="traco">—</p>
+            </div>
+            <div class="as">
+                <a href="vendas.html" id="cancelar">Cancelar</a>
+                <a href="vendas.html" id="registra">Registrar Venda</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

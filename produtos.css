@@ -164,7 +164,12 @@ body {
     height: 50px;
     padding-left: 30px;
     align-content: center;
-    width: 150px;
+    width: 200px;
+}
+
+#nav-pro {
+    color: #4F46E5;
+    background-color: #EEF2FF;
 }
 
 .nav-link a:hover {

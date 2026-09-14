@@ -164,7 +164,12 @@ body {
     height: 50px;
     padding-left: 30px;
     align-content: center;
-    width: 150px;
+    width: 200px;
+}
+
+#nav-ven {
+    color: #4F46E5;
+    background-color: #EEF2FF;
 }
 
 .nav-link a:hover {
@@ -228,8 +233,13 @@ body {
     font-size: 15px;
     color: #6B7280;
     margin: 0px;
-    height: 40px;
     align-items: center;
+}
+
+.tabela th {
+    font-weight: 200;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .tabela thead tr {
@@ -239,7 +249,7 @@ body {
 
 .tabela tbody {
     display: grid;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .tabela tbody tr {
@@ -249,29 +259,53 @@ body {
     align-items: center;
 }
 
+.tabela tbody tr:hover {
+    background-color: whitesmoke;
+}
+
 .tabela tbody tr:not(:last-child) {
     border-bottom: 2px solid whitesmoke;
 }
 
-.tag {
+.tag,
+#tag {
     display: grid;
     justify-content: start;
     margin-left: 20px;
 }
 
+.tag {
+    color: #9CA3AF;
+}
+
+.cliente,
+#pessoas {
+    display: grid;
+    justify-content: start;
+}
+
 .cliente {
+    font-weight: bold;
+}
+
+.produto,
+#item {
     display: grid;
     justify-content: start;
 }
 
 .produto {
+    color: #374151;
+}
+
+.qtd,
+#nmr {
     display: grid;
-    justify-content: start;
+    justify-content: end;
 }
 
 .qtd {
-    display: grid;
-    justify-content: end;
+    color: #374151;
 }
 
 .total {
@@ -279,8 +313,17 @@ body {
     justify-content: end;
 }
 
-.data {
+.total {
+    font-weight: bold;
+}
+
+.data,
+#dia {
     display: grid;
     justify-content: end;
     margin-right: 20px;
+}
+
+.data {
+    color: #9CA3AF;
 }
